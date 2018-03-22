@@ -5,7 +5,7 @@ const app = new express()
 /* eslint-enable new-cap */
 const config = require('./config')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || location.port
 
 app.use(express.static('client'))
 
